@@ -3,7 +3,16 @@
     "name": "MP2I",
     "postCreateCommand": "git config pull.rebase false",
     "customizations": {
-        "vscode": {
+        "vscode": { // local
+            "editor.formatOnSave": true,
+            "editor.minimap.enabled": false,
+            "breadcrumbs.enabled": false,
+            "extensions.ignoreRecommendations": true,
+            "workbench.colorTheme": "Default High Contrast",
+            "git.postCommitCommand": "sync",
+            "git.autofetch": true
+        },
+        "codespaces": { // remote
             "editor.formatOnSave": true,
             "editor.minimap.enabled": false,
             "breadcrumbs.enabled": false,
