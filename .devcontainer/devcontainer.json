@@ -2,28 +2,17 @@
     "image": "qfortier/mp2i",
     "name": "MP2I",
     "postCreateCommand": "git config pull.rebase false",
-    "customizations": {
-        "vscode": { // local
-            "editor.formatOnSave": true,
-            "editor.minimap.enabled": false,
-            "breadcrumbs.enabled": false,
-            "extensions.ignoreRecommendations": true,
-            "workbench.colorTheme": "Default High Contrast",
-            "git.postCommitCommand": "sync",
-            "git.autofetch": true
-        },
-        "codespaces": { // remote
-            "editor.formatOnSave": true,
-            "editor.minimap.enabled": false,
-            "breadcrumbs.enabled": false,
-            "extensions.ignoreRecommendations": true,
-            "workbench.colorTheme": "Default High Contrast",
-            "git.postCommitCommand": "sync",
-            "git.autofetch": true
-        },
-        "extensions": [
-            "ocamllabs.ocaml-platform",
-            "ms-vscode.cpptools-extension-pack"
-        ]
-    }
+    "extensions": [
+        "ocamllabs.ocaml-platform",
+        "ms-vscode.cpptools-extension-pack"
+    ],
+    "settings": {
+        "editor.formatOnSave": true,
+        "editor.minimap.enabled": false,
+        "breadcrumbs.enabled": false,
+        "extensions.ignoreRecommendations": true,
+        "workbench.colorTheme": "Default High Contrast",
+        "git.postCommitCommand": "sync",
+        "git.autofetch": true
+    },
 }
